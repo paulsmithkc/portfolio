@@ -1,0 +1,12 @@
+{
+  "debug": "app:*",
+  "http": {
+    "hostname": "localhost",
+    "port": 3001,
+    "protocol": "http"
+  },
+  "devserver": {
+    "hostname": "localhost",
+    "port": 3000
+  }
+}

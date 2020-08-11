@@ -1,0 +1,12 @@
+{
+  "debug": "DEBUG",
+  "http": {
+    "hostname": "HOSTNAME",
+    "port": "PORT",
+    "protocol": "PROTOCOL"
+  },
+  "devserver": {
+    "hostname": "HOSTNAME_DEVSERVER",
+    "port": "PORT_DEVSERVER"
+  }
+}
