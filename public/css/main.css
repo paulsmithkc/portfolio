@@ -3,7 +3,7 @@ body {
 }
 
 section {
-  min-height: 400px;
+  min-height: 200px;
   padding: 1rem 0;
 }
 section h2 {
@@ -16,9 +16,12 @@ section:first-child {
   background: var(--dark);
   color: white;
 }
+section:last-child {
+  padding-bottom: 4rem;
+}
 
 .profile-photo {
-  border: 1rem solid white;
+  border: 4px solid white;
   border-radius: 100%;
 }
 
@@ -26,8 +29,8 @@ a.animated {
   transition: all 0.4s;
   display: inline-block;
   padding: 0.25em 0.5em;
-  margin: 0.25em;
   line-height: 1.5;
+  font-weight: bolder;
   color: inherit;
   text-decoration: none !important;
   background-image: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
@@ -40,4 +43,12 @@ a.animated:hover {
   color: white !important;
   text-decoration: none !important;
   background-size: 100% 100%;
+}
+
+#skills .container {
+  max-width: 30rem;
+}
+#skills .badge {
+  font-size: 1.2rem;
+  margin: 0.25rem;
 }
