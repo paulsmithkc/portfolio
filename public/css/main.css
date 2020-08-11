@@ -1,5 +1,29 @@
+@font-face {
+  font-family: 'Red Rose';
+  src: url('/fonts/RedRose/RedRose-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Red Rose', fantasy;
+  font-weight: bolder;
+}
+
 body {
   position: relative;
+}
+
+nav a.navbar-brand {
+  font-weight: bold;
+}
+nav a.nav-link.active {
+  font-weight: bold;
 }
 
 section {
@@ -13,7 +37,7 @@ section:nth-child(odd) {
   background: var(--light);
 }
 section:first-child {
-  background: var(--dark);
+  background: var(--gray-dark);
   color: white;
 }
 section:last-child {
