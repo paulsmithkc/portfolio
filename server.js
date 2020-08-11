@@ -12,7 +12,16 @@ const app = express();
 // middleware
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(morgan('tiny'));
-//app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+      },
+    },
+  })
+);
 
 // routes
 app.get('/', (request, response) => {
@@ -21,6 +30,7 @@ app.get('/', (request, response) => {
 app.use('/jquery/js', express.static('node_modules/jquery/dist'));
 app.use('/bootstrap', express.static('node_modules/bootstrap/dist'));
 app.use('/bootswatch', express.static('node_modules/bootswatch/dist'));
+app.use('/dist', express.static('dist'));
 app.use(express.static('public'));
 app.use((request, response) => {
   response.status(404).type('text/plain').send('Page Not Found');

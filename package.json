@@ -7,7 +7,7 @@
     "start": "node -r dotenv/config server.js",
     "nodemon": "npx nodemon -r dotenv/config server.js",
     "devserver": "npx webpack-dev-server --mode development --env.development --env.devServer",
-    "build-disabled": "webpack --mode production --env.production"
+    "build": "webpack --mode production --env.production"
   },
   "repository": {
     "type": "git",
@@ -33,21 +33,36 @@
   },
   "homepage": "https://paulsmithkc.herokuapp.com/",
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "bootswatch": "^4.5.2",
     "config": "^3.3.1",
     "debug": "^4.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.0.0",
-    "jquery": "^3.5.1",
     "morgan": "^1.10.0",
-    "popper.js": "^1.16.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.5.2",
+    "bootswatch": "^4.5.2",
+    "css-loader": "^4.2.1",
+    "cssnano": "^4.1.10",
     "eslint": "^7.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }
 }

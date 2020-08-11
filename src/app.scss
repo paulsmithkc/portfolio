@@ -1,17 +1,40 @@
 @font-face {
   font-family: 'Red Rose';
-  src: url('/fonts/RedRose/RedRose-Bold.ttf') format('truetype');
+  src: url('./fonts/RedRose/RedRose-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
-}
-h1, h2, h3 {
-  font-family: 'Red Rose', fantasy;
+$font-family-base: 'Roboto', sans-serif;
+$font-family-headings: 'Red Rose', fantasy;
+$fa-font-path: '../node_modules/@fortawesome/fontawesome-free/webfonts';
+$primary: #58f04d;
+$secondary: #f04dae;
+$body-bg: white; //#E0E0E0;
+$body-color: #3b3b3b;
+$jumbotron-bg: #3b3b3b;
+
+//#32A629
+//#95FF8E
+//#58F04D
+//#A31469
+//#F04DAE
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+//@include fa-linkedin;
+//fa-linkedin
+//fa-github-square
+//fa-youtube
+
+h1,
+h2,
+h3 {
+  font-family: $font-family-headings;
   font-weight: bolder;
 }
 
@@ -34,10 +57,10 @@ section h2 {
   text-align: center;
 }
 section:nth-child(odd) {
-  background: var(--light);
+  background: $light;
 }
 section:first-child {
-  background: var(--gray-dark);
+  background: $jumbotron-bg;
   color: white;
 }
 section:last-child {
@@ -52,19 +75,19 @@ section:last-child {
 a.animated {
   transition: all 0.4s;
   display: inline-block;
-  padding: 0.25em 0.5em;
+  padding: 0.25em;
   line-height: 1.5;
   font-weight: bolder;
   color: inherit;
   text-decoration: none !important;
-  background-image: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 100%);
+  background-image: linear-gradient(to bottom, $primary 0%, $primary 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 100% 4px;
 }
 
 a.animated:hover {
-  color: white !important;
+  color: black !important;
   text-decoration: none !important;
   background-size: 100% 100%;
 }
