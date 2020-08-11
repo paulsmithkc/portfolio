@@ -1,0 +1,44 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio project. Currently hosted at https://paulsmithkc.herokuapp.com/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulsmithkc/portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Bootstrap",
+    "HTML/CSS",
+    "JavaScript",
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Paul Smith",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/paulsmithkc/portfolio/issues"
+  },
+  "homepage": "https://paulsmithkc.herokuapp.com/",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "config": "^3.3.1",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.0.0",
+    "jquery": "^3.5.1",
+    "morgan": "^1.10.0",
+    "popper.js": "^1.16.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "webpack": "^4.44.1",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
