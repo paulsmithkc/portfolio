@@ -3,6 +3,7 @@ const config = require('config');
 const express = require('express');
 const favicon = require('serve-favicon');
 const helmet = require('helmet');
+const compression = require('compression');
 const morgan = require('morgan');
 const path = require('path');
 
@@ -22,6 +23,7 @@ app.use(
     },
   })
 );
+app.use(compression());
 
 // routes
 app.get('/', (request, response) => {
