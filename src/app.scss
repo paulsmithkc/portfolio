@@ -57,7 +57,7 @@ nav {
   content-visibility: auto;
 }
 section {
-  min-height: 200px;
+  min-height: 400px;
   padding: 1rem 0;
   contain: layout style paint;
   content-visibility: auto;
@@ -101,10 +101,33 @@ a.animated:hover {
   background-size: 100% 100%;
 }
 
+#top {
+  height: 27rem;
+}
+#skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 12rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
 #skills .container {
   max-width: 30rem;
 }
 #skills .badge {
   font-size: 1.2rem;
   margin: 0.25rem;
+}
+#courses {
+  min-height: 40rem;
+}
+#projects {
+  min-height: 25rem;
+}
+#experience {
+  min-height: 40rem;
+}
+#education {
+  min-height: 25rem;
 }
