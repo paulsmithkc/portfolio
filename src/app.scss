@@ -51,9 +51,15 @@ nav a.nav-link.active {
   font-weight: bold;
 }
 
+nav {
+  height: 3rem;
+  contain: strict;
+  content-visibility: auto;
+}
 section {
   min-height: 200px;
   padding: 1rem 0;
+  contain: layout style paint;
   content-visibility: auto;
 }
 section h2 {
