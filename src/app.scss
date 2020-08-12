@@ -7,7 +7,7 @@ $secondary: #f04dae;
 $body-bg: white; //#E0E0E0;
 $body-color: #3b3b3b;
 $jumbotron-bg: #3b3b3b;
-$link-color: #32A629;
+$link-color: #32a629;
 
 //#32A629
 //#95FF8E
@@ -121,16 +121,11 @@ section:nth-child(odd) {
   background: $light;
 }
 section:first-child {
-  background: $jumbotron-bg;
+  background-color: $jumbotron-bg;
   color: white;
 }
 section:last-child {
   padding-bottom: 4rem;
-}
-
-.profile-photo {
-  border: 4px solid white;
-  border-radius: 100%;
 }
 
 a.animated {
@@ -154,7 +149,28 @@ a.animated:hover {
 }
 
 #top {
-  height: 27rem;
+  min-height: 27rem;
+  padding: 0;
+  position: relative;
+  background-image: url('./images/bg-code-medium.jpg');
+  background-image: image-set(
+    url('./images/bg-code-small.jpg') 1x,
+    url('./images/bg-code-medium.jpg') 2x,
+    url('./images/bg-code-large.jpg') 3x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#top-background {
+  position: absolute;
+  z-index: -1;
+}
+#top-photo {
+  border: 4px solid white;
+  border-radius: 100%;
+}
+#top .container {
+  padding: 2rem 0;
 }
 #skills {
   display: flex;
