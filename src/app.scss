@@ -1,17 +1,7 @@
-@font-face {
-  font-family: 'Red Rose';
-  font-display: swap;
-  src: url('./fonts/RedRose/RedRose-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Roboto';
-  font-display: swap;
-  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-}
-
 $font-family-base: 'Roboto', sans-serif;
 $font-family-headings: 'Red Rose', fantasy;
 $fa-font-path: '../node_modules/@fortawesome/fontawesome-free/webfonts';
+$fa-font-display: swap;
 $primary: #58f04d;
 $secondary: #f04dae;
 $body-bg: white; //#E0E0E0;
@@ -24,14 +14,75 @@ $jumbotron-bg: #3b3b3b;
 //#A31469
 //#F04DAE
 
-@import '../node_modules/bootstrap/scss/bootstrap';
-@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-@import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@font-face {
+  font-family: 'Red Rose';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/RedRose/RedRose-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('#{$fa-font-path}/fa-brands-400.ttf') format('truetype');
+}
 
-//@include fa-linkedin;
-//fa-linkedin
-//fa-github-square
-//fa-youtube
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+
+//@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/navbar';
+@import 'bootstrap/scss/nav';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/badge';
+@import 'bootstrap/scss/card';
+
+//@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/variables';
+@import '@fortawesome/fontawesome-free/scss/mixins';
+@import '@fortawesome/fontawesome-free/scss/core';
+@import '@fortawesome/fontawesome-free/scss/fixed-width';
+.linkedin {
+  @extend %fa-icon;
+  @extend .fa-fw;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-linkedin);
+  }
+}
+.github {
+  @extend %fa-icon;
+  @extend .fa-fw;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-github-square);
+  }
+}
+.youtube {
+  @extend %fa-icon;
+  @extend .fa-fw;
+  @extend .fab;
+  &:before {
+    content: fa-content($fa-var-youtube);
+  }
+}
 
 h1,
 h2,

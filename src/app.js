@@ -1,7 +1,8 @@
 import './app.scss';
 
 import $ from 'jquery';
-import 'bootstrap';
+import 'bootstrap/js/src/scrollspy';
+window.$ = $;
 
 $(() => {
   $('nav a[href^="#"]').click((evt) => {
