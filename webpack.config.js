@@ -4,6 +4,7 @@ const path = require('path');
 const config = require('config');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const apiHostname = config.get('http.hostname');
 const apiPort = config.get('http.port');
@@ -29,6 +30,12 @@ module.exports = (env) => {
       maxEntrypointSize: 512000,
       maxAssetSize: 512000,
     },
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: '[name].bundle.css',
+        chunkFilename: '[id].bundle.css',
+      }),
+    ],
     module: {
       rules: [
         {
@@ -40,22 +47,17 @@ module.exports = (env) => {
         {
           test: /\.scss$/i,
           include: [path.resolve(__dirname, 'src')],
-          use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+            'sass-loader',
+          ],
         },
         {
           test: /\.css$/i,
           include: [path.resolve(__dirname, 'src')],
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.(jpe?g|png|gif|svg)$/i,
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets/images',
-            publicPath: 'dist/assets/images',
-            // images will be emitted to dist/assets/images/ folder
-          },
+          use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
         {
           test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -63,8 +65,18 @@ module.exports = (env) => {
           options: {
             name: '[name].[ext]',
             outputPath: 'assets/fonts',
-            publicPath: 'dist/assets/fonts',
+            publicPath: 'assets/fonts',
             // fonts will be emitted to dist/assets/fonts/ folder
+          },
+        },
+        {
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'assets/images',
+            publicPath: 'assets/images',
+            // images will be emitted to dist/assets/images/ folder
           },
         },
       ],
