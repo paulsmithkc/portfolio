@@ -223,11 +223,17 @@ a.animated:hover {
   min-height: 40rem;
 }
 #projects {
-  min-height: 25rem;
+  min-height: 40rem;
+}
+#projects .card {
+  min-width: 200px;
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 #experience {
   min-height: 40rem;
 }
 #education {
-  min-height: 25rem;
+  min-height: 30rem;
 }
