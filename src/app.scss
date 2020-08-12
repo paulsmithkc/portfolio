@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'Red Rose';
+  font-display: swap;
   src: url('./fonts/RedRose/RedRose-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
+  font-display: swap;
   src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
@@ -31,9 +33,6 @@ $jumbotron-bg: #3b3b3b;
 //fa-github-square
 //fa-youtube
 
-html, body {
-  font-display: swap;
-}
 h1,
 h2,
 h3 {
