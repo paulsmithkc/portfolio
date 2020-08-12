@@ -8,6 +8,7 @@
     <link rel="preload" href="dist/assets/fonts/RedRose-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
     <link rel="preload" href="dist/assets/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
     <link rel="preload" href="dist/assets/fonts/fa-brands-400.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link rel="preload" href="dist/assets/fonts/fa-solid-900.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
     <link rel="preload" href="images/photo.jpg" as="image" type="image/jpeg" crossorigin="anonymous" />
     <link rel="stylesheet" href="dist/main.bundle.css" />
     <script async src="dist/main.bundle.js" crossorigin="anonymous"></script>
@@ -199,67 +200,165 @@
       <section id="projects">
         <div class="container">
           <h2>Projects</h2>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h3 class="card-title h4 mb-1">My Little Recipe Book</h3>
-              <div class="mb-3">
-                <span class="badge badge-secondary">MongoDB</span>
-                <span class="badge badge-secondary">JavaScript</span>
-                <span class="badge badge-secondary">Bootstrap</span>
-                <span class="badge badge-secondary">Node.js</span>
-                <span class="badge badge-secondary">Express.js</span>
-                <span class="badge badge-secondary">React.js</span>
-                <span class="badge badge-secondary">Natural Language Processing</span>
-                <span class="badge badge-secondary">Web Scraping</span>
-                <span class="badge badge-secondary">Twitter API</span>
-                <span class="badge badge-secondary">Youtube API</span>
-                <span class="badge badge-secondary">Heroku</span>
-              </div>
-              <div>
-                <a href="https://recipe-suggestions.herokuapp.com/" target="_blank" rel="noreferrer" class="animated">
-                  Website
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h3 class="card-title h4 mb-1">Learn 2 Earn</h3>
-              <div class="mb-3">
-                <span class="badge badge-secondary">SQL Server</span>
-                <span class="badge badge-secondary">C#</span>
-                <span class="badge badge-secondary">ASP.NET MVC</span>
-                <span class="badge badge-secondary">Entity Framework</span>
-                <span class="badge badge-secondary">Azure</span>
-              </div>
-              <div>
-                <a href="http://learn2earn.ranken.edu/" target="_blank" rel="noreferrer" class="animated">
-                  Website
-                </a>
+          <div class="card-deck">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title h4 mb-1">My Little Recipe Book</h3>
+                <div class="mb-3">
+                  <span class="badge badge-secondary">MongoDB</span>
+                  <span class="badge badge-secondary">JavaScript</span>
+                  <span class="badge badge-secondary">Bootstrap</span>
+                  <span class="badge badge-secondary">Node.js</span>
+                  <span class="badge badge-secondary">Express.js</span>
+                  <span class="badge badge-secondary">React.js</span>
+                  <span class="badge badge-secondary">Natural Language Processing</span>
+                  <span class="badge badge-secondary">Web Scraping</span>
+                  <span class="badge badge-secondary">Twitter API</span>
+                  <span class="badge badge-secondary">Youtube API</span>
+                  <span class="badge badge-secondary">Heroku</span>
+                </div>
+                <p class="card-text mb-1">
+                  Hobby project to build a recipe search engine. Just type in 2-3 ingredients you have on hand, and get
+                  suggestions for what to make.
+                </p>
+                <div>
+                  <a
+                    href="https://recipe-suggestions.herokuapp.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="animated m-2"
+                  >
+                    <i class="globe"></i>
+                    Website
+                  </a>
+                  <img src="images/screenshot-recipe-suggestions.png" alt="" class="img-fluid mt-3" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card mb-3">
-            <div class="card-body">
-              <h3 class="card-title h4 mb-1">Game Development</h3>
-              <div>
-                <span class="badge badge-secondary">C#</span>
-                <span class="badge badge-secondary">Unity</span>
-                <span class="badge badge-secondary">2D/3D Game Development</span>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title h4 mb-1">Learn 2 Earn</h3>
+                <div class="mb-3">
+                  <span class="badge badge-secondary">SQL Server</span>
+                  <span class="badge badge-secondary">C#</span>
+                  <span class="badge badge-secondary">ASP.NET MVC</span>
+                  <span class="badge badge-secondary">Entity Framework</span>
+                  <span class="badge badge-secondary">Azure</span>
+                </div>
+                <p class="card-text">
+                  The Learn to Earn (L2E) program provides a pathway of activities/engagements for secondary school
+                  students (6th-12th grades) which provides exposure to STEM careers and earns college scholarship
+                  credits.
+                </p>
+                <p class="card-text text-muted">
+                  Currently rebuilding this website with a MERN stack.
+                </p>
+                <div>
+                  <a href="http://learn2earn.ranken.edu/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="globe"></i>
+                    Website
+                  </a>
+                  <img src="images/screenshot-learn2earn.png" alt="" class="img-fluid mt-3" />
+                </div>
               </div>
-              <div>
-                <a href="https://merlin4.itch.io/" target="_blank" rel="noreferrer" class="animated m-2">
-                  itch.io profile
-                </a>
-                <a
-                  href="https://www.youtube.com/playlist?list=PLVoiJOXGj9Y22ZnurZxBIUEK5n-1O_NPR"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="animated m-2"
-                >
-                  <i class="youtube"></i>
-                  YouTube Playlist
-                </a>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h3 class="card-title h4 mb-1">Game Development</h3>
+                <div class="mb-3">
+                  <span class="badge badge-secondary">C#</span>
+                  <span class="badge badge-secondary">Unity</span>
+                  <span class="badge badge-secondary">2D/3D Game Development</span>
+                </div>
+                <p class="card-text">
+                  Various game prototypes and game jams from the past years.
+                </p>
+                <div>
+                  <a href="https://merlin4.itch.io/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="globe"></i>
+                    Itch.io Profile
+                  </a>
+                  <a href="https://globalgamejam.org/users/paul-smith/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="globe"></i>
+                    Global Game Jam Profile
+                  </a>
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLVoiJOXGj9Y22ZnurZxBIUEK5n-1O_NPR"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="animated m-2"
+                  >
+                    <i class="youtube"></i>
+                    YouTube Playlist
+                  </a>
+                </div>
+                <hr></hr>
+                <div>
+                  <a href="https://merlin4.itch.io/bouncyrunner/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Bouncy Runner
+                  </a>
+                  <a href="https://merlin4.itch.io/costumecrash/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Costume Crash
+                  </a>
+                  <a href="https://merlin4.itch.io/gravity-wells" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Gravity Wells
+                  </a>
+                  <a href="https://merlin4.itch.io/petes-discount-market/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Pete's Discount Market
+                  </a>
+                  <a href="https://globalgamejam.org/2018/games/final-transmission-2/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Final Transmission
+                  </a>
+                  <a href="https://globalgamejam.org/2015/games/how-do-we-kill-it-now/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    How do we kill it now?
+                  </a>
+                  <a href="https://skeleton-fairy.itch.io/out-of-season/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Out of Season
+                  </a>
+                  <a href="https://gfettersgmailcom.itch.io/sky-scraper/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Sky Scraper
+                  </a>
+                  <a href="https://teamtba.itch.io/hairspray-hannah/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Hairspray Hannah
+                  </a>
+                  <a href="https://globalgamejam.org/2016/games/ritual-end/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="gamepad"></i>
+                    Ritual of the End
+                  </a>
+                  <a href="https://globalgamejam.org/2019/games/home-where-friends-are/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="globe"></i>
+                    Home Is Where The Friends Are
+                  </a>
+                  <a href="https://github.com/paulsmithkc/SkyScrapper2/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="github"></i>
+                    Sky Walker
+                  </a>
+                  <a href="https://github.com/paulsmithkc/blacksmith_simulator/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="github"></i>
+                    Blacksmith Simulator
+                  </a>
+                  <a href="https://github.com/paulsmithkc/GGJ2017/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="github"></i>
+                    The Title
+                  </a>
+                  <a href="https://youtu.be/PnX7ZJL5F6c/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="youtube"></i>
+                    Spring the Fence
+                  </a>
+                  <a href="https://youtu.be/2JnTQ6FTmeA/" target="_blank" rel="noreferrer" class="animated m-2">
+                    <i class="youtube"></i>
+                    Rubberband
+                  </a>
+                </div>
               </div>
             </div>
           </div>
