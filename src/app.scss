@@ -112,10 +112,21 @@ $link-color: #32a629;
     content: fa-content($fa-var-gamepad);
   }
 }
+.package {
+  @extend %fa-icon;
+  @extend .fa-fw;
+  @extend .fas;
+  &:before {
+    content: fa-content($fa-var-cube);
+  }
+}
 
 h1,
 h2,
-h3 {
+h3,
+.h1,
+.h2,
+.h3 {
   font-family: $font-family-headings;
   font-weight: bolder;
 }
@@ -230,6 +241,9 @@ a.animated:hover {
   flex-basis: 300px;
   flex-grow: 1;
   flex-shrink: 1;
+}
+#projects .card dl {
+  font-size: 0.8rem;
 }
 #experience {
   min-height: 40rem;
