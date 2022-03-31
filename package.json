@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node -r dotenv/config server.js",
     "start-dev": "npx nodemon -r dotenv/config server.js",
-    "start-webpack": "npx webpack-dev-server --mode development --env.development --env.devServer",
     "build": "webpack --mode production --env.production"
   },
   "repository": {
@@ -65,7 +64,6 @@
     "sass-loader": "^9.0.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.12"
   }
 }
