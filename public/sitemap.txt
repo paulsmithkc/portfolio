@@ -1,1 +1,1 @@
-https://paulsmithkc.herokuapp.com/
+https://www.paulsmith.dev/
