@@ -11,7 +11,7 @@ const path = require('path');
 const app = express();
 
 // middleware
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public/images/favicon-16.png')));
 app.use(morgan('tiny'));
 app.use(
   helmet({
