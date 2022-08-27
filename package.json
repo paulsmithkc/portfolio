@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My personal portfolio project. Currently hosted at https://paulsmithkc.herokuapp.com/",
@@ -26,11 +27,14 @@
     "Webpack"
   ],
   "author": "Paul Smith",
-  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/paulsmithkc/portfolio/issues"
   },
-  "homepage": "https://paulsmithkc.herokuapp.com/",
+  "homepage": "https://www.paulsmith.dev/",
+  "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  },
   "dependencies": {
     "compression": "^1.7.4",
     "config": "^3.3.7",
