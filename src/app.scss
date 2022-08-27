@@ -72,6 +72,7 @@ $link-color: #32a629;
 @import '@fortawesome/fontawesome-free/scss/mixins';
 @import '@fortawesome/fontawesome-free/scss/core';
 @import '@fortawesome/fontawesome-free/scss/fixed-width';
+
 .linkedin {
   @extend %fa-icon;
   @extend .fa-fw;
@@ -192,6 +193,15 @@ a.animated:hover {
   min-height: 27rem;
   padding: 0;
   position: relative;
+  text-shadow: 2px 2px black;
+}
+#top-background {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-image: url('./images/bg-code-medium.jpg');
   background-image: image-set(
     url('./images/bg-code-small.jpg') 1x,
@@ -200,11 +210,7 @@ a.animated:hover {
   );
   background-size: cover;
   background-repeat: no-repeat;
-  text-shadow: 2px 2px black;
-}
-#top-background {
-  position: absolute;
-  z-index: -1;
+  opacity: 20%;
 }
 #top-photo {
   border: 4px solid white;
