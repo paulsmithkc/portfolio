@@ -5,7 +5,7 @@ import 'bootstrap/js/src/scrollspy';
 window.$ = $;
 
 $(() => {
-  $('nav a[href^="#"]').click((evt) => {
+  $('nav a[href^="#"]').on('click', (evt) => {
     evt.preventDefault();
     const hash = evt.target.hash;
     const navbarHeight = $('nav').height();
