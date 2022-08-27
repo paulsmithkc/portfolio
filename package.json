@@ -2,7 +2,7 @@
   "private": true,
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My personal portfolio project. Currently hosted at https://paulsmithkc.herokuapp.com/",
+  "description": "My personal portfolio project. Currently hosted at https://www.paulsmith.dev/",
   "main": "server.js",
   "scripts": {
     "start": "node -r dotenv/config server.js",
@@ -32,8 +32,8 @@
   },
   "homepage": "https://www.paulsmith.dev/",
   "engines" : { 
-    "npm" : ">=7.0.0",
-    "node" : ">=16.0.0"
+    "npm" : "^8.0.0",
+    "node" : "^16.0.0"
   },
   "dependencies": {
     "compression": "^1.7.4",
