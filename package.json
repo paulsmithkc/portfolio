@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r dotenv/config server.js",
-    "start-dev": "npx nodemon -r dotenv/config server.js",
+    "start-dev": "npm run build && npx nodemon -r dotenv/config server.js",
     "build": "webpack --mode production --env.production"
   },
   "repository": {
@@ -32,8 +32,8 @@
   },
   "homepage": "https://www.paulsmith.dev/",
   "engines" : { 
-    "npm" : "^8.0.0",
-    "node" : "^16.0.0"
+    "npm" : "^10.0.0",
+    "node" : "^20.0.0"
   },
   "dependencies": {
     "compression": "^1.7.4",
