@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r dotenv/config server.js",
-    "start-dev": "npm run build && npx nodemon -r dotenv/config server.js",
+    "dev": "npm run build && npx nodemon -r dotenv/config server.js",
     "build": "webpack --mode production --env.production"
   },
   "repository": {
@@ -31,9 +31,9 @@
     "url": "https://github.com/paulsmithkc/portfolio/issues"
   },
   "homepage": "https://www.paulsmith.dev/",
-  "engines" : { 
-    "node" : "^20.0.0",
-    "pnpm" : "^8.0.0"
+  "engines": {
+    "node": "^22.0.0",
+    "pnpm": "^10.0.0"
   },
   "dependencies": {
     "compression": "^1.7.4",
