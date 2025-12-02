@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "description": "My personal portfolio project",
+  "website": "https://paulsmith.dev/",
+  "logo": "https://paulsmith.dev/images/favicon-64.png",
+  "success_url": "/",
+  "repository": "https://github.com/paulsmithkc/portfolio",
+  "env": {
+    "DEBUG": { "value": "app:*" },
+    "NODE_ENV": { "value": "production" },
+    "TZ": { "value": "America/Chicago" }
+  },
+  "buildpacks": [{ "url": "heroku/nodejs" }]
+}
